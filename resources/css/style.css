@@ -1,0 +1,35 @@
+
+/* Format the page container */
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Put a border around container elements */
+.container {
+  border: solid black 1px;
+}
+
+/* ---------------------------------------------- Header ------------------------------------------ */
+
+/* Make the header a flex container */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+/* Format logo container */
+.full-logo {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+/* Display nav items inline */
+nav li {
+  display: inline-block;
+  margin-left: 16px;
+}
