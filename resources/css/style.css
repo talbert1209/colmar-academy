@@ -1,9 +1,40 @@
 
+/* Format HTML level elements */
+html {
+  font-size: 16px;
+}
+
+/* Format h1 elements */
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+/* Format h2 elements */
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
 /* Format the page container */
 .page {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 24px;
+}
+
+/* Give all sections a top and bottom padding */
+section {
+  padding: 32px 24px;
 }
 
 /* Put a border around container elements */
@@ -19,6 +50,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 64px;
+  padding: 0 24px;
 }
 
 /* Format logo container */
@@ -32,4 +64,43 @@ header {
 nav li {
   display: inline-block;
   margin-left: 16px;
+}
+
+/* ---------------------------------------------- Banner ------------------------------------------ */
+
+/* Format banner section container */
+.banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Format banner img container */
+.banner-img-container {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  margin-right: 24px;
+  flex-grow: 1;
+}
+
+/* Format banner-img */
+.banner-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Format banner-text */
+.banner-text {
+  max-height: auto;
+  width: 40%;
+}
+
+/* Format the start here button */
+#start-button {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  background-color: black;
 }
