@@ -4,6 +4,11 @@ html {
   font-size: 16px;
 }
 
+/* Put a border around container elements */
+.container {
+  border: solid black 1px;
+}
+
 /* Format h1 elements */
 h1 {
   display: block;
@@ -32,16 +37,6 @@ h2 {
   margin: 0 auto;
 }
 
-/* Give all sections a top and bottom padding */
-section {
-  padding: 32px 24px;
-}
-
-/* Put a border around container elements */
-.container {
-  border: solid black 1px;
-}
-
 /* ---------------------------------------------- Header ------------------------------------------ */
 
 /* Make the header a flex container */
@@ -66,30 +61,67 @@ nav li {
   margin-left: 16px;
 }
 
-/* ---------------------------------------------- Banner ------------------------------------------ */
+/* ---------------------------------------------- Common Body Styling ----------------------------- */
 
-/* Format banner section container */
-.banner {
+/* Format all split section containers */
+.split {
+  padding: 32px 0 32px 24px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
-/* Format banner img container */
-.banner-img-container {
+/* Format left content of split containers */
+.left-content {
   width: 60%;
+}
+
+/* Format banner img container */
+.main-media-container {
   height: auto;
   overflow: hidden;
-  margin-right: 24px;
-  flex-grow: 1;
 }
 
 /* Format banner-img */
-.banner-img-container img {
+.main-media-container img {
   width: 100%;
   height: auto;
   display: block;
 }
+
+/* Format aside container */
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+/* Format articles inside aside */
+.article {
+  display: flex;
+}
+
+/* Format articl image container */
+.aside-img-container {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+/* Format article imges inside container */
+.aside-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Format the aside text */
+.aside-txt {
+  width: 65%;
+}
+
+/* ---------------------------------------------- Banner ------------------------------------------ */
 
 /* Format banner-text */
 .banner-text {
@@ -99,8 +131,8 @@ nav li {
 
 /* Format the start here button */
 #start-button {
-  display: block;
   text-align: center;
+  display: block;
   padding: 8px;
   background-color: black;
 }
