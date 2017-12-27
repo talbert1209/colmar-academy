@@ -121,7 +121,7 @@ aside {
   width: 65%;
 }
 
-/* ---------------------------------------------- Banner ------------------------------------------ */
+/* ---------------------------------------------- Banner Section ---------------------------------- */
 
 /* Format banner-text */
 .banner-text {
@@ -135,4 +135,29 @@ aside {
   display: block;
   padding: 8px;
   background-color: black;
+}
+
+/* ---------------------------------------------- Classes Section --------------------------------- */
+div.classes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Format images */
+.class img {
+  width: 100%;
+  height: auto;
+}
+
+/* Format each class container */
+.class {
+  flex-basis: 30%;
+}
+
+/* ---------------------------------------------- Footer ------------------------------------------ */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
