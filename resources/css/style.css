@@ -203,6 +203,7 @@ div.classes {
 .class {
   flex-basis: 29%;
   margin: 16px;
+  background-color: #efefef;
 }
 
 /* Format class text */
