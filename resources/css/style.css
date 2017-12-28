@@ -4,10 +4,15 @@ html {
   font-size: 16px;
 }
 
-/* Put a border around container elements */
+body {
+  background-color: #efefef;
+  color: #535353;
+}
+
+/* Put a border around container elements
 .container {
   border: solid black 1px;
-}
+} */
 
 /* Format h1 elements */
 h1 {
@@ -35,6 +40,7 @@ h2 {
 .page {
   max-width: 1050px;
   margin: 0 auto;
+  background-color: #efefef;
 }
 
 /* ---------------------------------------------- Header ------------------------------------------ */
@@ -127,10 +133,13 @@ aside {
   justify-content: center;
 }
 
-/* Format section titles */
-.section-title {
-  text-align: center;
-  margin: 2rem 0;
+/* Format section backgrounds */
+.page section:nth-child(2n+2) {
+  background-color: #caebf2;
+}
+
+.article.color {
+  background-color: #caebf2;
 }
 
 /* ---------------------------------------------- Banner Section ---------------------------------- */
@@ -151,7 +160,7 @@ aside {
   text-align: center;
   display: block;
   padding: 8px;
-  background-color: black;
+  background-color: #ff3b3f;
 }
 
 /* ---------------------------------------------- Articles ---------------------------------------- */
@@ -175,7 +184,7 @@ aside {
 /* Format section title */
 .section-title.learning {
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  padding: 2rem 0 1rem 0;
 }
 
 div.classes {
