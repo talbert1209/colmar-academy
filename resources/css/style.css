@@ -7,6 +7,7 @@ html {
 body {
   background-color: #efefef;
   color: #535353;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Put a border around container elements
@@ -36,6 +37,11 @@ h2 {
   font-weight: bold;
 }
 
+/* Format anchor elements */
+a {
+  color: #ff3b3f;
+}
+
 /* Format the page container */
 .page {
   max-width: 1050px;
@@ -58,6 +64,7 @@ header {
 .full-logo {
   height: 32px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -65,6 +72,24 @@ header {
 nav li {
   display: inline-block;
   margin-left: 16px;
+}
+
+/* Make li bold when hovered over */
+nav li:hover {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Format logo-text */
+.logo-text {
+  font-family: 'Graduate', sans-serif;
+  font-size: 26px;
+  display: flex;
+}
+
+/* Color second span in logo text */
+.logo-text span:last-child {
+  color: #ff3b3f;
 }
 
 /* ---------------------------------------------- Common Body Styling ----------------------------- */
@@ -133,6 +158,11 @@ aside {
   justify-content: center;
 }
 
+/* format p elements inside aside */
+aside p {
+  margin: 8px 0;
+}
+
 /* Format section backgrounds */
 .page section:nth-child(2n+2) {
   background-color: #caebf2;
@@ -155,12 +185,22 @@ aside {
   padding-right: 20%;
 }
 
+/* Format banner p text */
+.banner-text p {
+  font-size: 1.3rem;
+}
+
 /* Format the start here button */
 #start-button {
+  border-radius: 8px;
   text-align: center;
   display: block;
-  padding: 8px;
+  padding: 16px;
   background-color: #ff3b3f;
+  color: #fff;
+  margin-top: 16px;
+  box-shadow: 3px 3px 5px 2px #13353d;
+  transition: box-shadow 200ms;
 }
 
 /* ---------------------------------------------- Articles ---------------------------------------- */
@@ -185,6 +225,7 @@ aside {
 .section-title.learning {
   text-align: center;
   padding: 2rem 0 1rem 0;
+  margin: 0;
 }
 
 div.classes {
@@ -204,6 +245,7 @@ div.classes {
   flex-basis: 29%;
   margin: 16px;
   background-color: #efefef;
+  box-shadow: 5px 5px 5px 2px #13353d;
 }
 
 /* Format class text */
