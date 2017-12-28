@@ -74,10 +74,24 @@ nav li {
   margin-left: 16px;
 }
 
+/* Change color of header a tags */
+header a {
+  color: #535353;
+  text-decoration: none;
+}
+
+header a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #535353;
+  transition: width 0.3s;
+}
+
 /* Make li bold when hovered over */
-nav li:hover {
-  font-weight: bold;
-  margin-left: 10px;
+header a:hover::after {
+  width: 100%;
 }
 
 /* Format logo-text */
