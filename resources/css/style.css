@@ -4,10 +4,10 @@ html {
   font-size: 16px;
 }
 
-/* Put a border around container elements
+/* Put a border around container elements */
 .container {
   border: solid black 1px;
-} */
+}
 
 /* Format h1 elements */
 h1 {
@@ -169,7 +169,13 @@ aside {
 
 /* Format classes section */
 .classes-section {
-  padding: 0 56px;
+  padding: 0 56px 16px 56px;
+}
+
+/* Format section title */
+.section-title.learning {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
 }
 
 div.classes {
@@ -190,9 +196,28 @@ div.classes {
   margin: 16px;
 }
 
+/* Format class text */
+.class-txt {
+  padding: 16px;
+}
+
+/* ---------------------------------------------- Exhibit Section --------------------------------- */
+
+/* Format section title */
+.section-title.exhibits {
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
+/* Format the title under the video */
+.exhibit-title {
+  margin: 24px 0 8px 0;
+}
+
 /* ---------------------------------------------- Footer ------------------------------------------ */
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px 24px 36px 24px;
 }
