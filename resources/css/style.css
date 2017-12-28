@@ -4,10 +4,10 @@ html {
   font-size: 16px;
 }
 
-/* Put a border around container elements */
+/* Put a border around container elements
 .container {
   border: solid black 1px;
-}
+} */
 
 /* Format h1 elements */
 h1 {
@@ -33,7 +33,7 @@ h2 {
 
 /* Format the page container */
 .page {
-  max-width: 1000px;
+  max-width: 1050px;
   margin: 0 auto;
 }
 
@@ -68,7 +68,7 @@ nav li {
   padding: 32px 0 32px 24px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 /* Format left content of split containers */
@@ -94,11 +94,13 @@ aside {
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin-left: 24px;
 }
 
 /* Format articles inside aside */
 .article {
   display: flex;
+  padding: 16px;
 }
 
 /* Format articl image container */
@@ -119,14 +121,29 @@ aside {
 /* Format the aside text */
 .aside-txt {
   width: 65%;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Format section titles */
+.section-title {
+  text-align: center;
+  margin: 2rem 0;
 }
 
 /* ---------------------------------------------- Banner Section ---------------------------------- */
 
+/* Format outer banner text container */
+.banner {
+  align-items: center;
+}
+
 /* Format banner-text */
 .banner-text {
-  max-height: auto;
-  width: 40%;
+  padding: 16px;
+  padding-right: 20%;
 }
 
 /* Format the start here button */
@@ -137,7 +154,24 @@ aside {
   background-color: black;
 }
 
+/* ---------------------------------------------- Articles ---------------------------------------- */
+
+/* Format lead article h1 spacing */
+.lead h1 {
+  margin-top: 32px;
+}
+
+.lead p:first-of-type {
+  margin: 24px 0;
+}
+
 /* ---------------------------------------------- Classes Section --------------------------------- */
+
+/* Format classes section */
+.classes-section {
+  padding: 0 56px;
+}
+
 div.classes {
   display: flex;
   flex-wrap: wrap;
@@ -152,7 +186,8 @@ div.classes {
 
 /* Format each class container */
 .class {
-  flex-basis: 30%;
+  flex-basis: 29%;
+  margin: 16px;
 }
 
 /* ---------------------------------------------- Footer ------------------------------------------ */
