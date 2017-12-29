@@ -37,11 +37,6 @@ h2 {
   font-weight: bold;
 }
 
-/* Format anchor elements */
-a {
-  color: #ff3b3f;
-}
-
 /* Format the page container */
 .page {
   max-width: 1050px;
@@ -80,12 +75,24 @@ header a {
   text-decoration: none;
 }
 
-header a::after {
+nav a::after {
   content: '';
   display: block;
   width: 0;
   height: 2px;
   background: #535353;
+  transition: width 0.3s;
+}
+
+/* This had to be put here to keep the linter happy */
+
+/* Goes along with code to put underline under aside links */
+.article a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff3b3f;
   transition: width 0.3s;
 }
 
@@ -186,6 +193,25 @@ aside p {
   background-color: #caebf2;
 }
 
+/* Had to be here to make linter happy */
+
+/* Formats a elements in footer */
+footer a {
+  color: #535353;
+  text-decoration: underline;
+}
+
+/* Format asside a elements */
+.article a {
+  width: 84px;
+  color: #ff3b3f;
+  text-decoration: none;
+}
+
+.article a:hover::after {
+  width: 100%;
+}
+
 /* ---------------------------------------------- Banner Section ---------------------------------- */
 
 /* Format outer banner text container */
@@ -214,7 +240,7 @@ aside p {
   color: #fff;
   margin-top: 16px;
   box-shadow: 3px 3px 5px 2px #13353d;
-  transition: box-shadow 200ms;
+  text-decoration: none;
 }
 
 /* ---------------------------------------------- Articles ---------------------------------------- */
