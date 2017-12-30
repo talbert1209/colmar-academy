@@ -332,6 +332,19 @@ footer {
   text-decoration: none;
 }
 
+/* ---------------------------------------------- Tablet Styling ---------------------------------- */
+@media only screen and (max-width: 768px) {
+  /* ------------------- Header ----------------- */
+  .mobile-header {
+    display: none;
+  }
+
+  /* Shrink header margins */
+  nav li {
+    margin-left: 8px;
+  }
+}
+
 /* ---------------------------------------------- Mobile Styling ---------------------------------- */
 @media only screen and (max-width: 425px) {
   /* Format page container */
