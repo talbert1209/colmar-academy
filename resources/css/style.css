@@ -46,8 +46,13 @@ h2 {
 
 /* ---------------------------------------------- Header ------------------------------------------ */
 
-/* Make the header a flex container */
-header {
+/* Hide mobile header */
+.mobile-header {
+  display: none;
+}
+
+/* Make the desktop header a flex container */
+.desktop-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -320,4 +325,55 @@ footer {
 
 .footer-icon {
   text-decoration: none;
+}
+
+/* ---------------------------------------------- Mobile Styling ---------------------------------- */
+@media only screen and (max-width: 425px) {
+  /* Format page container */
+  .page {
+    width: 100%;
+  }
+
+  /* Hide desktop header */
+  .desktop-header {
+    display: none;
+  }
+
+  /* Format mobile header */
+  .mobile-header {
+    display: flex;
+    justify-content: space-around;
+    height: 64px;
+  }
+
+  /* Format banner container */
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Make banner image the width of the page */
+  .left-content {
+    width: 100%;
+  }
+
+  /* Format aside sections */
+  aside {
+    width: 100%;
+  }
+
+  .outer-banner-text {
+    margin: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  /* Format banner-text */
+  .banner-text {
+    padding: 0 16px 32px 16px;
+  }
 }
