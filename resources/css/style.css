@@ -427,7 +427,7 @@ footer {
     display: none;
   }
 
-  /* Display the mobile articke images */
+  /* Display the mobile article images */
   img.mobile-article-img {
     display: block;
   }
@@ -435,5 +435,50 @@ footer {
   /* Remove the background color from the last article */
   .article.color {
     background-color: inherit;
+  }
+
+  /* ------------------- Classes Section -------- */
+
+  /* Hide class images */
+  .class img {
+    display: none;
+  }
+
+  /* Hide p elements in classes */
+  .class p {
+    display: none;
+  }
+
+  /* Format the class section container */
+  .classes-section {
+    padding: 0 16px 32px 16px;
+  }
+
+  /* Format the classes section */
+  .classes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Format the class-txt container */
+  .class-txt {
+    padding: 0 16px;
+  }
+
+  /* Format the individual class margins */
+  .class {
+    margin: 8px;
+  }
+
+  /* ------------------- Exhibit Section -------- */
+
+  /* Hide aside container */
+  .exhibit-container aside {
+    display: none;
+  }
+
+  /* Format exhibit section container */
+  .exhibit-container {
+    padding: 32px 16px;
   }
 }
