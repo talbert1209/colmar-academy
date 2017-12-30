@@ -250,6 +250,11 @@ footer a {
 
 /* ---------------------------------------------- Articles ---------------------------------------- */
 
+/* Hide mobile images */
+img.mobile-article-img {
+  display: none;
+}
+
 /* Format lead article h1 spacing */
 .lead h1 {
   margin-top: 32px;
@@ -334,6 +339,8 @@ footer {
     width: 100%;
   }
 
+  /* ------------------- Header ----------------- */
+
   /* Hide desktop header */
   .desktop-header {
     display: none;
@@ -345,6 +352,8 @@ footer {
     justify-content: space-around;
     height: 64px;
   }
+
+  /* ------------------- Banner ----------------- */
 
   /* Format banner container */
   .banner {
@@ -375,5 +384,56 @@ footer {
   /* Format banner-text */
   .banner-text {
     padding: 0 16px 32px 16px;
+  }
+
+  /* ------------------- Articles --------------- */
+
+  /* Format articles section */
+  .articles {
+    padding: 16px 16px 32px 16px;
+  }
+
+  /* Hide left content for articles */
+  .articles .left-content {
+    display: none;
+  }
+
+  /* Format margins for top articles section */
+  .top-articles {
+    margin: 0;
+  }
+
+  /* Format individual articles */
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  /* Format the article image containers */
+  .aside-img-container {
+    width: 100%;
+  }
+
+  /* Format the aside article text containers */
+  .aside-txt {
+    padding: 16px;
+  }
+
+  /* Hide the desktop article images */
+  img.desktop-article-img {
+    display: none;
+  }
+
+  /* Display the mobile articke images */
+  img.mobile-article-img {
+    display: block;
+  }
+
+  /* Remove the background color from the last article */
+  .article.color {
+    background-color: inherit;
   }
 }
