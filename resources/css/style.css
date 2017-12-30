@@ -333,7 +333,7 @@ footer {
 }
 
 /* ---------------------------------------------- Tablet Styling ---------------------------------- */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   /* ------------------- Header ----------------- */
   .mobile-header {
     display: none;
@@ -355,7 +355,7 @@ footer {
 }
 
 /* ---------------------------------------------- Mobile Styling ---------------------------------- */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 750px) {
   /* Format page container */
   .page {
     width: 100%;
