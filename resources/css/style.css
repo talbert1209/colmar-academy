@@ -343,6 +343,15 @@ footer {
   nav li {
     margin-left: 8px;
   }
+
+  /* Change margins for class section */
+  .classes-section {
+    padding: 0 0 36px;
+  }
+
+  .class {
+    margin: 10px;
+  }
 }
 
 /* ---------------------------------------------- Mobile Styling ---------------------------------- */
