@@ -479,6 +479,24 @@ footer {
 
   /* Format exhibit section container */
   .exhibit-container {
-    padding: 32px 16px;
+    padding: 16px 16px 32px 16px;
+  }
+
+  /* Remove padding from video container */
+  .main-media-container {
+    padding: 0;
+  }
+
+  /* ------------------- Footer ----------------- */
+
+  /* Format footer container */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .copyright {
+    margin-bottom: 8px;
   }
 }
