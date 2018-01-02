@@ -165,7 +165,6 @@ aside {
   width: 35%;
   height: auto;
   overflow: hidden;
-  flex-grow: 1;
 }
 
 /* Format article imges inside container */
